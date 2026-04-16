@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git credentialsId: 'git_creds',
-                    url: 'git@github.com:your-username/react-advanced-dashboard.git'
+                    url: 'git@github.com:anuragpm1992-sketch/frontend-react.git'
             }
         }
 

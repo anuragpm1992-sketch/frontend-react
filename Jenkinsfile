@@ -9,13 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git credentialsId: 'git_creds',
-                    url: 'git@github.com:anuragpm1992-sketch/frontend-react.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install'

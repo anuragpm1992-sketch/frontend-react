@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-ssh',
+                git credentialsId: 'github_creds',
                     url: 'git@github.com:your-username/react-advanced-dashboard.git'
             }
         }
